@@ -1,0 +1,563 @@
+:root {
+    --fontPrincipal: "Montserrat", sans-serif;
+    --linear: linear-gradient(rgb(68, 68, 194), rgb(172, 58, 172));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fontPrincipal);
+    background: rgb(0, 0, 0)
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    transition: 0.3s;
+}
+
+.claro {
+    background-color: white;
+    color: black;
+}
+
+#tema {
+    display: flex;
+    margin-left: 80rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px red;
+    position: fixed;
+}
+
+.cabeça {
+    width: 100%;
+    height: 115px;
+    position: fixed;
+}
+
+.principal {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.rodape {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 130px;
+    animation-name: piscar;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    box-shadow: 2px 2px 8px red;
+}
+
+.rodape h3 {
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.rodape a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(255, 251, 0);
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 0px rgb(255, 0, 0);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4rem;
+    box-shadow: 2px 2px 4px black;
+    background-color: #121212;
+    position: fixed;
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    font-size: 20px;
+    transition: 0.3s;
+    text-shadow: 1px 1px 1px rgb(0, 13, 255);
+}
+
+.menu a:hover {
+    background: var(--linear);
+    transform: scale(1.10);
+    border-radius: 10px;
+    text-shadow: 2px 4px 8px rgb(0, 0, 0);
+}
+
+#icon-4 {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background: var(--linear);
+    border-radius: 50%;
+    color: white;
+    margin-left: 230px;
+}
+
+#ECDQ {
+    display: flex;
+    margin-right: 37px;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 13, 255);
+}
+
+#titulo-1 {
+    padding: 130px 0px 0px 100px;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+#paragrafo-1 {
+    padding: 40px 0px 0px 100px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.imagens img {
+    height: 40rem;
+    width: 60rem;
+    margin: 100px 0px 0px 12rem;
+    border-radius: 3%;
+}
+
+#Sobre {
+    text-align: center;
+    margin: 1rem 0px 0px 20rem;
+    font-size: 3.5rem;
+    border-style: groove;
+    width: 50%;
+    border-color: rgb(0, 0, 0);
+    background: rgb(63, 61, 61);
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+.imagens #Sobre {
+    box-shadow: 0px 4px 12px rgb(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+
+
+.bloco-mae {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    padding-top: 100px;
+    height: 20%;
+}
+
+.bloco1 {
+    background-color: #242424;
+    height: 300px;
+    width: 350px;
+    background-image: url("imagens/img-5.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.bloco2 {
+    background-color: #242424;
+    height: 300px;
+    width: 350px;
+    background-image: url("imagens/img-8.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.bloco3 {
+    background-color: #242424;
+    height: 300px;
+    width: 350px;
+    background-image: url("imagens/img-7.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#paragrafo-2 {
+    display: flex;
+    line-height: 1.2rem;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    text-align: center;
+    margin: 4rem 0px 0px 10rem;
+    font-size: 20px;
+}
+
+#Projetos {
+    text-align: center;
+    margin: 10rem 0px 0px 20rem;
+    font-size: 3.5rem;
+    border-style: groove;
+    width: 50%;
+    border-color: rgb(0, 0, 0);
+    background: rgb(63, 61, 61);
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    box-shadow: 0px 4px 12px rgb(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.celebro {
+    text-align: center;
+    padding: 20px;
+}
+
+.celebro img {
+    border-radius: 100%;
+    margin: 0;
+    padding-top: 3rem;
+}
+
+.celebro p {
+    display: flex;
+    font-size: 1.1rem;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#Objetivos {
+    text-align: center;
+    margin: 10rem 0px 0px 20rem;
+    font-size: 3.5rem;
+    border-style: groove;
+    width: 50%;
+    border-color: rgb(0, 0, 0);
+    background: rgb(63, 61, 61);
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    box-shadow: 0px 4px 12px rgb(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.uniao {
+    display: flex;
+    justify-content: left;
+}
+
+.uniao img {
+    width: 550px;
+    height: 500px;
+    border-radius: 10px;
+    margin-top: 5rem;
+    margin-left: 20px;
+}
+
+.uniao p {
+    margin-top: 4rem;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    margin-left: 1rem;
+}
+
+#Tempo {
+    text-align: center;
+    margin: 10rem 0px 0px 20rem;
+    font-size: 3.5rem;
+    border-style: groove;
+    width: 50%;
+    border-color: rgb(0, 0, 0);
+    background: rgb(63, 61, 61);
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    box-shadow: 0px 4px 12px rgb(0, 0, 0, 0.9);
+    border-radius: 10px;
+}
+
+.relogio {
+    display: flex;
+    justify-content: center;
+    gap: 220px;
+}
+
+.relogio img {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+#para-tempo {
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin-top: 4rem;
+}
+
+.redes {
+    display: flex;
+    margin-left: 17rem;
+    gap: 20px;
+}
+
+.redes img {
+    width: 60px;
+    height: 80px;
+    margin-top: 20px;
+}
+
+.redes img:hover {
+    transform: scale(1.10);
+}
+
+.rodape a:hover {
+    color: rgb(0, 255, 217);
+    text-shadow: 2px 2px 8px rgba(63, 190, 0, 0.524);
+    transform: scale(1.10);
+}
+
+.meu-video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 20px auto;
+}
+
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width:1200px) {
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .menu ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    #ECDQ {
+        font-size: 1.5rem;
+        margin: .5rem 0;
+    }
+
+    #icon-4 {
+        margin: 1rem auto;
+    }
+
+    #titulo-1,
+    #paragrafo-1,
+    #paragrafo-2 {
+        text-align: center;
+        padding: 1.5rem;
+        margin: 0 auto;
+    }
+
+    .imagens img {
+        width: 90%;
+        height: auto;
+        margin: 2rem auto;
+        display: block;
+    }
+
+    .sobre,
+    #projetos,
+    #Objetivos,
+    #Tempo {
+        margin: 3rem auto;
+        width: 80%;
+        font-size: 2.4rem;
+    }
+
+    .bloco-mae {
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+
+    .bloco1,
+    .bloco2,
+    .bloco3 {
+        width: 80%;
+        height: 250px;
+    }
+
+    .uniao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .uniao img {
+        width: 80%;
+        height: auto;
+        margin: 2rem 0;
+    }
+
+    .uniao p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        margin: 1rem 2rem;
+    }
+
+    .celebro img {
+        width: 80%;
+        height: auto;
+    }
+
+    .celebro p {
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: justify;
+    }
+
+    .relogio {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .relogio img {
+        width: 80%;
+        height: auto;
+    }
+
+    #para-tempo {
+        font-size: 1rem;
+        padding: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .rodape p {
+        font-size: 1rem;
+        margin: .5rem 0;
+    }
+
+    .rodape a {
+        font-size: 1.1rem;
+        margin-bottom: .5rem;
+    }
+
+    .redes {
+        margin: 1rem 0;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .redes img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .meu-video {
+        width: 95%;
+        height: auto;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width:600px) {
+
+    .menu ul {
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    #titulo-1 {
+        font-size: 1.5rem;
+        padding-top: 7rem;
+    }
+
+    #paragrafo-1,
+    #paragrafo-2 {
+        font-size: .95rem;
+    }
+
+    .sobre,
+    #projetos,
+    #Objetivos,
+    #Tempo {
+        font-size: 1.6rem;
+        width: 90%;
+    }
+
+    .bloco1,
+    .bloco2,
+    .bloco3 {
+        width: 90%;
+        height: 220px;
+    }
+
+    .rodape p,
+    #para-tempo {
+        font-size: .9rem;
+    }
+
+    #icon-4 {
+        width: 45px;
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    #ECDQ {
+        font-size: 1rem;
+    }
+}
