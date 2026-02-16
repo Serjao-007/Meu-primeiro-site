@@ -1,4 +1,2 @@
-# Meu-primeiro-site
-RVP SITE
-<p align="left">
-</p>
+O **Meu Primeiro Site** é meu primeiro projeto web e marca o início da minha jornada no desenvolvimento web.  
+Foi construído com **HTML** <img src="https://skillicons.dev/icons?i=html" width="18"/> , **CSS** <img src="https://skillicons.dev/icons?i=css" width="18"/> e **JavaScript** <img src="https://skillicons.dev/icons?i=js" width="18"/>, com foco em **design**, **responsividade** e **boas práticas**, servindo como base para minha evolução em projetos maiores.
