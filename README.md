@@ -1,5 +1,5 @@
 O **Meu Primeiro Site** é meu primeiro projeto web e marca o início da minha jornada no desenvolvimento web.  
-Foi construído com foco em **design**, **responsividade** e **boas práticas**, servindo como base para minha evolução em projetos maiores.
+Foi criado com **HTML**, **CSS** e **JavaScript**, com foco em **design**, **responsividade** e **boas práticas**, servindo como base para minha evolução em projetos maiores.
 
 <div align="center">
   <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
